@@ -3,11 +3,14 @@
   "type": "object",
   "properties": {
     "references": {
-      "type": "array",
-      "items": [
-        {
+      "type": "object",
+      "properties": {
+        "group": {
           "type": "string"
         }
+      },
+      "required": [
+        "group"
       ]
     },
     "link": {
@@ -20,7 +23,7 @@
       "type": "string"
     },
     "archived": {
-      "type": "string"
+      "type": "boolean"
     },
     "created_at": {
       "type": "string"

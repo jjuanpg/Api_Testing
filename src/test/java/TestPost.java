@@ -9,9 +9,9 @@ public class TestPost implements IAbstractTest {
     public void testPostLink(){
         PostLink post = new PostLink();
         post.setProperties("api/bitly/post/links.properties");
-        post.expectResponseStatus(HttpResponseStatusType.CREATED_201);
+        //post.expectResponseStatus(HttpResponseStatusType.CREATED_201);
         post.callAPI();
-        //post.validateResponse("api/bitly/post/rs.schema");
+        post.validateResponseAgainstSchema("api/bitly/post/rs.schema");
     }
 
     @Test

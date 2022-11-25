@@ -1,0 +1,56 @@
+[2022-11-25 11:18:38] [1] [WARN] Reporting disabled: using no op test run registrar
+[2022-11-25 11:18:38] [1] [INFO] TEST [Api_Testing - testPostLink] STARTED at [20:18:38 2022-11-25]
+[2022-11-25 11:18:42] [1] [INFO] Base properties loaded: api/bitly/post/links.properties
+[2022-11-25 11:18:47] [1] [INFO] Request method:	POST
+Request URI:	https://api-ssl.bitly.com/v4/shorten
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Multiparts:		<none>
+Cookies:		<none>
+Headers:		Accept=*/*
+				Authorization=Bearer f760f98a301586115dd5a9fa30563cd73a30cb31
+				Content-Type=application/json; charset=UTF-8
+Body:
+{
+    "long_url": "https://dev.bitly.com/docs/getting-started/introduction/",
+    "domain": "bit.ly",
+    "group_guid": "Bmbpll7rjKu"
+}
+HTTP/1.1 200 OK
+Server: nginx
+Date: Fri, 25 Nov 2022 23:18:47 GMT
+Content-Type: application/json
+Content-Length: 305
+Strict-Transport-Security: max-age=31536000; includeSubDomains
+X-XSS-Protection: 1; mode=blockFilter
+X-Content-Type-Options: nosniff
+X-Frame-Options: DENY
+Content-Security-Policy: default-src 'none
+Via: 1.1 google
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+
+{
+    "created_at": "2022-11-25T22:41:59+0000",
+    "id": "bitly.is/3GLTuc9",
+    "link": "https://bitly.is/3GLTuc9",
+    "custom_bitlinks": [
+        
+    ],
+    "long_url": "https://dev.bitly.com/docs/getting-started/introduction/",
+    "archived": false,
+    "tags": [
+        
+    ],
+    "deeplinks": [
+        
+    ],
+    "references": {
+        "group": "https://api-ssl.bitly.com/v4/groups/Bmbpll7rjKu"
+    }
+}
+
+[2022-11-25 11:18:47] [1] [INFO] JSON schema of version below or equal to draft-04 was detected
+[2022-11-25 11:18:48] [1] [INFO] Validation against Json schema successfully passed
+[2022-11-25 11:18:48] [1] [INFO] TEST [Api_Testing - testPostLink] PASSED at [20:18:48 2022-11-25]
