@@ -1,0 +1,108 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "references": {
+      "type": "array",
+      "items": [
+        {
+          "type": "string"
+        }
+      ]
+    },
+    "link": {
+      "type": "string"
+    },
+    "id": {
+      "type": "string"
+    },
+    "long_url": {
+      "type": "string"
+    },
+    "archived": {
+      "type": "string"
+    },
+    "created_at": {
+      "type": "string"
+    },
+    "custom_bitlinks": {
+      "type": "array",
+      "items": [
+        {
+          "type": "string"
+        }
+      ]
+    },
+    "tags": {
+      "type": "array",
+      "items": [
+        {
+          "type": "string"
+        }
+      ]
+    },
+    "deeplinks": {
+      "type": "array",
+      "items": [
+        {
+          "type": "object",
+          "properties": {
+            "guid": {
+              "type": "string"
+            },
+            "bitlink": {
+              "type": "string"
+            },
+            "app_uri_path": {
+              "type": "string"
+            },
+            "install_url": {
+              "type": "string"
+            },
+            "app_guid": {
+              "type": "string"
+            },
+            "os": {
+              "type": "string"
+            },
+            "install_type": {
+              "type": "string"
+            },
+            "created": {
+              "type": "string"
+            },
+            "modified": {
+              "type": "string"
+            },
+            "brand_guid": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "guid",
+            "bitlink",
+            "app_uri_path",
+            "install_url",
+            "app_guid",
+            "os",
+            "install_type",
+            "created",
+            "modified",
+            "brand_guid"
+          ]
+        }
+      ]
+    }
+  },
+  "required": [
+    "references",
+    "link",
+    "id",
+    "long_url",
+    "archived",
+    "created_at",
+    "custom_bitlinks",
+    "tags",
+    "deeplinks"
+  ]
+}

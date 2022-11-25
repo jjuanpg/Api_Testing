@@ -1,0 +1,79 @@
+[2022-11-25 10:29:18] [1] [WARN] Reporting disabled: using no op test run registrar
+[2022-11-25 10:29:18] [1] [INFO] TEST [project-qa - testPost] STARTED at [19:29:18 2022-11-25]
+[2022-11-25 10:29:24] [1] [INFO] Request method:	POST
+Request URI:	https://api-ssl.bitly.com/v4/shorten
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Multiparts:		<none>
+Cookies:		<none>
+Headers:		Accept=*/*
+				Authorization = Bearer f760f98a301586115dd5a9fa30563cd73a30cb31
+				Content-Type = application/json
+				Content-Type=application/json; charset=UTF-8
+Body:
+{
+    "long_url": "https://www.reddit.com/",
+    "domain": "bit.ly",
+    "group_guid": "Bmbpll7rjKu"
+}
+HTTP/1.0 400 Bad Request
+Content-Type: text/html; charset=UTF-8
+Referrer-Policy: no-referrer
+Content-Length: 273
+Date: Fri, 25 Nov 2022 22:29:25 GMT
+
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html;charset=utf-8"/>
+    <title>400 Bad Request</title>
+  </head>
+  <body text="#000000" bgcolor="#ffffff">
+    <h1>Error: Bad Request</h1>
+    <h2>Your client has issued a malformed or illegal request.</h2>
+    <h2/>
+  </body>
+</html>
+
+[2022-11-25 10:29:24] [1] [ERROR] TEST [project-qa - testPost] FAILED at [19:29:24 2022-11-25] - org.json.JSONException: Unparsable JSON string: 
+<html><head>
+<meta http-equiv="content-type" content="text/html;charset=utf-8">
+<title>400 Bad Request</title>
+</head>
+<body text=#000000 bgcolor=#ffffff>
+<h1>Error: Bad Request</h1>
+<h2>Your client has issued a malformed or illegal request.</h2>
+<h2></h2>
+</body></html>
+
+
+com.qaprosoft.carina.core.foundation.api.AbstractApiMethodV2.validateResponse(AbstractApiMethodV2.java:284)
+com.qaprosoft.carina.core.foundation.api.AbstractApiMethodV2.validateResponse(AbstractApiMethodV2.java:238)
+com.qaprosoft.carina.core.foundation.api.AbstractApiMethodV2.validateResponse(AbstractApiMethodV2.java:310)
+TestPost.testPost(TestPost.java:11)
+java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+java.base/java.lang.reflect.Method.invoke(Method.java:577)
+org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+org.testng.TestRunner.privateRun(TestRunner.java:806)
+org.testng.TestRunner.run(TestRunner.java:601)
+org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+org.testng.SuiteRunner.run(SuiteRunner.java:330)
+org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+org.testng.TestNG.runSuites(TestNG.java:1099)
+org.testng.TestNG.run(TestNG.java:1067)
+com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)

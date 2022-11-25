@@ -1,0 +1,53 @@
+[2022-11-25 10:32:34] [1] [WARN] Reporting disabled: using no op test run registrar
+[2022-11-25 10:32:34] [1] [INFO] TEST [project-qa - testPost] STARTED at [19:32:34 2022-11-25]
+[2022-11-25 10:32:40] [1] [INFO] Request method:	POST
+Request URI:	https://api-ssl.bitly.com/v4/shorten
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Multiparts:		<none>
+Cookies:		<none>
+Headers:		Accept=*/*
+				Authorization=Bearer f760f98a301586115dd5a9fa30563cd73a30cb31
+				Content-Type=application/json; charset=UTF-8
+Body:
+{
+    "long_url": "https://www.reddit.com/",
+    "domain": "bit.ly",
+    "group_guid": "Bmbpll7rjKu"
+}
+HTTP/1.1 200 OK
+Server: nginx
+Date: Fri, 25 Nov 2022 22:32:40 GMT
+Content-Type: application/json
+Content-Length: 268
+Strict-Transport-Security: max-age=31536000; includeSubDomains
+X-XSS-Protection: 1; mode=blockFilter
+X-Content-Type-Options: nosniff
+X-Frame-Options: DENY
+Content-Security-Policy: default-src 'none
+Via: 1.1 google
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+
+{
+    "created_at": "2022-11-25T22:30:39+0000",
+    "id": "bit.ly/3Vq6J6v",
+    "link": "https://bit.ly/3Vq6J6v",
+    "custom_bitlinks": [
+        
+    ],
+    "long_url": "https://www.reddit.com/",
+    "archived": false,
+    "tags": [
+        
+    ],
+    "deeplinks": [
+        
+    ],
+    "references": {
+        "group": "https://api-ssl.bitly.com/v4/groups/Bmbpll7rjKu"
+    }
+}
+
+[2022-11-25 10:32:40] [1] [INFO] TEST [project-qa - testPost] PASSED at [19:32:40 2022-11-25]

@@ -1,0 +1,5 @@
+{
+  "long_url": "${long_url}",
+  "domain": "${domain}",
+  "group_guid": "${group_guid}"
+}
